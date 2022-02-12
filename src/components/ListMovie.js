@@ -36,12 +36,13 @@ const ListMovie = () => {
 
     
     return (
-    <Fragment>
+    <Fragment >
      
     
        <style> {document.body.style.backgroundColor = "#222222"} </style>
        
-        <div className = "container" id = "movie-list">
+       <div className = "container" id = "movie-list">
+       
 <table className="table mt-5 text-center table-dark table-striped table-bordered  " >
     <caption> Current List of Movies to Watch:</caption>
     <thead className="font-italic">
@@ -52,18 +53,19 @@ const ListMovie = () => {
       </tr>
     </thead>
     <tbody>
-        {}
+        
+    
      {movies.map(movie => (
-         <tr  className = "font-weight-bold "  key = {movie.movie_id}>
-             <td>{movie.moviename}</td>
-             <td><EditMovie movie = {movie} /></td>
+         <tr  className = "font-weight-bold " key={movie.movie_id}>
+             <td >{movie.moviename}</td>
+             <td><EditMovie movie = {movie}  /></td>
              <td><button className="btn btn-light" onClick = {() => deleteMovie(movie.movie_id)}>Delete Movie</button></td>
          </tr>
      ))}
     </tbody>
   </table>
-</div>
- 
+  </div>
+
     </Fragment>
 
 

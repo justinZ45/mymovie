@@ -109,10 +109,10 @@ function Trailer() {
            
           
            <div className="cont-trailer">
-            <h2 class="video-text font-weight-bold">{title}</h2>
-            <h6 class="video-text">{overview}</h6>
-            <h6 class="video-text">{`User Rating: ${rating}`}</h6>
-            <h6 class="video-text">{`Release Date: ${releaseDate}`}</h6>
+            <h2 className="video-text font-weight-bold">{title}</h2>
+            <h6 className="video-text">{overview}</h6>
+            <h6 className="video-text">{`User Rating: ${rating}`}</h6>
+            <h6 className="video-text">{`Release Date: ${releaseDate}`}</h6>
 
             </div>
                 

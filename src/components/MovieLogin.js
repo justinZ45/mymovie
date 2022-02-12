@@ -69,7 +69,7 @@ return (
         <br/>
     <br/>
 
-<form onSubmit={UserLogin} class = "cont-login">
+<form onSubmit={UserLogin} className = "cont-login">
 <img className = "form-control" id ="logo-login" src = "https://github.com/J-Laur/capstone-backend/blob/main/logo.png?raw=true" />
     <h1 className="text-primary"> Login Here</h1>
 

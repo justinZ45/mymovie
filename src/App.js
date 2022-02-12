@@ -1,4 +1,3 @@
-import React, {Fragment} from 'react';
 import './App.css';
 import InputMovie from "./components/InputMovie";
 import ListMovie from './components/ListMovie';
@@ -14,8 +13,8 @@ function App() {
   return (
     <Router>
      <Routes>
-     <Route exact path="/list" element = {[<InputMovie/>,<ListMovie/>]} />
      <Route exact path="/signup" element={<MovieSignin/>}/>
+     <Route exact path="/list" element = {[<InputMovie/>,<ListMovie/>]} />
      <Route exact path="/home" element={<Home/>}/>
      <Route exact path="/trailers" element={<Trailers/>}/>
        <Route exact path="/" element={<MovieLogin/>}/>

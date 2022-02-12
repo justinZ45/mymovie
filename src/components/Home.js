@@ -127,25 +127,25 @@ function Home() {
    
       <br />
 
-      <div class="container">
+      <div className="container">
         <h1 className="search-title">Search Results</h1>
-        <div class="row">
+        <div className="row">
           {isLoading ? (
             <h1 className="text-white">Fetching Movies...</h1>
           ) : (
             data4.map((data4) => (
-              <div>
-                <div class="card">
+          
+                <div className="card" key={data4.id}>
                   <img
                     src={`https://image.tmdb.org/t/p/original/${data4.poster_path}`}
                   />
-                  <p id = "rating" class="card-text text-center">{`${data4.vote_average}`}/10</p>
-                  <p class="card-text font-weight-bold text-center text-white">
+                  <p id = "rating" className="card-text text-center">{`${data4.vote_average}`}/10</p>
+                  <p className="card-text font-weight-bold text-center text-white">
                     {data4.original_title}
                   </p>
                   {/* <p class="card-text">{`Release date: ${data4.release_date}`}</p> */}
                 </div>
-              </div>
+            
             ))
           )}
         </div>
@@ -153,51 +153,51 @@ function Home() {
 
   
 
-      <div class="container">
+      <div className="container">
         <h1 className="text-light">Trending</h1>
-        <div class="row">
+        <div className="row">
           {isLoading ? (
             <h1 className="text-white">Fetching Movies...</h1>
           ) : (
             data.map((data) => (
-              <div>
-                <div class="card">
+           
+                <div className="card" key={data.id}>
                   <img
                     src={`https://image.tmdb.org/t/p/original/${data.poster_path}`}
                   />
-                  <p id="rating" class="card-text text-center">{`${data.vote_average}`}/10</p>
-                  <p class="card-text font-weight-bold text-center text-white">
+                  <p id="rating" className="card-text text-center">{`${data.vote_average}`}/10</p>
+                  <p className="card-text font-weight-bold text-center text-white">
                     {data.original_title}
                   </p>
                   {/* <p class="card-text">{`Release date: ${data.release_date}`}</p> */}
                 </div>
-              </div>
+          
             ))
           )}
-        </div>
+        
       </div>
 
   
 
-      <div class="container">
+      <div className="container">
         <h1 className="text-light">Popular</h1>
-        <div class="row">
+        <div className="row">
           {isLoading ? (
             <h1 className="text-white">Fetching Movies...</h1>
           ) : (
             data2.map((data2) => (
-              <div>
-                <div class="card">
+             
+                <div className="card" key={data2.id}>
                   <img
                     src={`https://image.tmdb.org/t/p/original/${data2.poster_path}`}
                   />
-                  <p id="rating" class="card-text text-center">{`${data2.vote_average}`}/10</p>
-                  <p class="card-text font-weight-bold text-center text-white">
+                  <p id="rating" className="card-text text-center">{`${data2.vote_average}`}/10</p>
+                  <p className="card-text font-weight-bold text-center text-white">
                     {data2.original_title}
                   </p>
                   {/* <p class="card-text">{`Release date: ${data2.release_date}`}</p> */}
                 </div>
-              </div>
+         
             ))
           )}
         </div>
@@ -205,25 +205,25 @@ function Home() {
 
 
 
-      <div class="container">
+      <div className="container">
         <h1 className="text-light">Showing Now</h1>
-        <div class="row">
+        <div className="row">
           {isLoading ? (
             <h1 className="text-white">Fetching Movies...</h1>
           ) : (
             data5.map((data5) => (
-              <div>
-                <div class="card">
+              
+                <div className="card" key={data5.id}>
                   <img
                     src={`https://image.tmdb.org/t/p/original/${data5.poster_path}`}
                   />
-                  <p id="rating" class="card-text text-center">{`${data5.vote_average}`}/10</p>
-                  <p class="card-text font-weight-bold text-center text-white">
+                  <p id="rating" className="card-text text-center">{`${data5.vote_average}`}/10</p>
+                  <p className="card-text font-weight-bold text-center text-white">
                     {data5.original_title}
                   </p>
                   {/* <p class="card-text">{`Release date: ${data5.release_date}`}</p> */}
                 </div>
-              </div>
+       
             ))
           )}
         </div>
@@ -231,28 +231,29 @@ function Home() {
 
 
   
-      <div class="container">
+      <div className="container">
         <h1 className="text-light">Upcoming</h1>
-        <div class="row">
+        <div className="row">
           {isLoading ? (
             <h1 className="text-white">Fetching Movies...</h1>
           ) : (
             data3.map((data3) => (
-              <div>
-                <div class="card">
+         
+                <div className="card" key={data3.id}>
                   <img
                     src={`https://image.tmdb.org/t/p/original/${data3.poster_path}`}
                   />
-                  <p class="card-text font-weight-bold text-center text-white">
+                  <p className="card-text font-weight-bold text-center text-white">
                     {data3.original_title}
                   </p>
-                  <p class="card-text text-center text-white">{`Release date: ${data3.release_date}`}</p>
+                  <p className="card-text text-center text-white">{`Release date: ${data3.release_date}`}</p>
                 </div>
-              </div>
+            
             ))
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 }
