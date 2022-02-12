@@ -48,7 +48,7 @@ const InputMovie = () => {
 
       console.log(body);
 
-      const response2 = await fetch("http://localhost:5000/movielist", {
+      const response2 = await fetch("https://mymovie123.herokuapp.com/movielist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

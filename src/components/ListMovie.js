@@ -11,7 +11,7 @@ const ListMovie = () => {
 
     const deleteMovie = async (id) => {
         try {
-            const deleteMovie = await fetch(`http://localhost:5000/movielist/${id}`, {method: "DELETE"}); 
+            const deleteMovie = await fetch(`https://mymovie123.herokuapp.com/movielist/${id}`, {method: "DELETE"}); 
 
         setItems(movies.filter(movie => movie.movie_id !== id));
         }catch (err) {
@@ -21,7 +21,7 @@ const ListMovie = () => {
 
     const getMovies = async () => {
         try {
-            const response = await fetch("http://localhost:5000/movielist")
+            const response = await fetch("https://mymovie123.herokuapp.com/movielist")
             const jsonData = await response.json()
             
             setItems(jsonData);

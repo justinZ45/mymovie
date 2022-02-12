@@ -9,7 +9,7 @@ const EditMovie = ({movie}) => {
         try{
 
             const body = {moviename};
-            const response = await fetch(`http://localhost:5000/movielist/${movie.movie_id}`, 
+            const response = await fetch(`https://mymovie123.herokuapp.com/movielist/${movie.movie_id}`, 
             {
             method: "PUT" ,
             headers: {"Content-Type": "application/json"},
