@@ -12,7 +12,7 @@ const MovieLogin = () => {
 
 
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [password, setPassword] = useState(""); 
    
 
 const UserLogin = async e => {

@@ -13,7 +13,7 @@ const MovieSignin = () => {
 const MovieSignup = async e => {
 
 try {
-    e.preventDefault();
+    e.preventDefault(); 
     
     const body = {username, email, password};
     const response = await fetch("https://mymovie123.herokuapp.com/users", { 

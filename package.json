@@ -16,7 +16,7 @@
   "resolutions": {
     "mini-css-extract-plugin": "2.4.5"
   },
-  "scripts": {
+  "scripts": { 
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

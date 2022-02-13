@@ -7,7 +7,7 @@ function Home() {
   const [data, setData] = useState([]);
 
   window.onload = function () {
-    getTrending();
+    getTrending(); 
     getPopular();
     getPlayingNow();
     getUpcoming();

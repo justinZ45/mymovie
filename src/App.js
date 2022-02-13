@@ -15,7 +15,7 @@ function App() {
      <Routes>
      <Route exact path="/signup" element={<MovieSignin/>}/>
      <Route exact path="/list" element = {[<InputMovie/>,<ListMovie/>]} />
-     <Route exact path="/home" element={<Home/>}/>
+     <Route exact path="/home" element={<Home/>}/> 
      <Route exact path="/trailers" element={<Trailers/>}/>
        <Route exact path="/" element={<MovieLogin/>}/>
        </Routes>

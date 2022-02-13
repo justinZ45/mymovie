@@ -11,7 +11,7 @@ const InputMovie = () => {
   const [search, setSearch] = useState([""]);
   //const [title, setTitle] = useState({});
 
-
+ 
 
   const getSearch = async (e) => {
 

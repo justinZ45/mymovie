@@ -10,7 +10,7 @@ const ListMovie = () => {
 
 
     const deleteMovie = async (id) => {
-        try {
+        try { 
             const deleteMovie = await fetch(`https://mymovie123.herokuapp.com/movielist/${id}`, {method: "DELETE"}); 
 
         setItems(movies.filter(movie => movie.movie_id !== id));

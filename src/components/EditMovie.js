@@ -6,7 +6,7 @@ const EditMovie = ({movie}) => {
 
     const updateMoviename = async e => {
         e.preventDefault();
-        try{
+        try{ 
 
             const body = {moviename};
             const response = await fetch(`https://mymovie123.herokuapp.com/movielist/${movie.movie_id}`, 

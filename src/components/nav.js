@@ -13,7 +13,7 @@ return(
 </button>
 <div className="collapse navbar-collapse" id="mynavbar">
 <ul className="navbar-nav me-auto">
-  <li className="nav-item">
+  <li className="nav-item"> 
     <h5> <a className="nav-link" href="/home">Home</a> </h5>
   </li>
   <li className="nav-item">

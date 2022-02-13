@@ -15,7 +15,7 @@ function Trailer() {
     const [key, setkey] = useState("");
     const [title, setTitle] = useState("");
     const [releaseDate, setReleasedate] = useState("");
-    const [overview, setOverview] = useState("");
+    const [overview, setOverview] = useState(""); 
     const [rating, setRating] = useState("");
     
 
