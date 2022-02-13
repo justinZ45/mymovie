@@ -1,8 +1,8 @@
 import React, { Fragment, useState } from "react";
 
-import Nav from "./nav";
+import Nav from "./Nav";
 
-import "./list.css";
+import "./List.css";
 
 const InputMovie = () => {
   const [isLoading, setIsLoading] = useState(true);
