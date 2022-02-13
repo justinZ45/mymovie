@@ -1,11 +1,11 @@
 import './App.css';
-import InputMovie from "./components/Inputmovie";
-import ListMovie from './components/Listmovie';
-import MovieLogin from './components/Movielogin';
+import InputMovie from "./components/inputmovie";
+import ListMovie from './components/listmovie';
+import MovieLogin from './components/movielogin';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import MovieSignin from './components/Moviesignin';
-import Home from './components/Home';
-import Trailers from './components/Trailers';
+import MovieSignin from './components/moviesignin';
+import Home from './components/home';
+import Trailers from './components/trailers';
 
 
 

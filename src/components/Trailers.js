@@ -1,8 +1,8 @@
 
 import React, { useState } from "react";
-import './Home.css';
-import Nav from "./Nav";
-import './Trailers.css';
+import './home.css';
+import Nav from "./nav";
+import './trailers.css';
 
 
 

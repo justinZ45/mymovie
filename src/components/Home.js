@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./Home.css";
-import Nav from "./Nav";
+import "./home.css";
+import Nav from "./nav";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
