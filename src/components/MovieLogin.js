@@ -91,7 +91,7 @@ return (
     <div>
 <br/>
     <h6 className="text-light"> Need to Sign Up? 
-<Link to="/signup">
+<Link to="/home">
  Click Here
 </Link>
 </h6>
