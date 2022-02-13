@@ -2,7 +2,7 @@
 import React, {useState, Fragment} from "react";
 import { Navigate } from "react-router-dom";
 import { Link } from "react-router-dom"
-import './MovieLogin.css';
+import './movielogin.css';
 
 
 

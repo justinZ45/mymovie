@@ -1,6 +1,6 @@
 import React, {Fragment, useEffect, useState} from "react";
 
-import EditMovie from "./EditMovie";
+import EditMovie from "./editmovie";
 
 
 const ListMovie = () => {
