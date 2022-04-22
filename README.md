@@ -1,6 +1,4 @@
-# MyMovie-Frontend
-
-## MyMovie
+# MyMovie
 
 Link to deployed application: https://cute-haupia-4eb2d6.netlify.app/
 
