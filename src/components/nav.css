@@ -1,0 +1,56 @@
+li{
+    padding-left: 50px;
+}
+
+a{
+    font-size: 20px;
+    position: relative;
+}
+
+a:hover {
+    text-decoration: none;
+  }
+
+  a:after {
+    border-radius: 1em;
+    border-top: .1em solid #b2b2b2;
+    content: "";
+    position: absolute;
+      right: 100%;
+      bottom: .14em;
+      left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1);
+  }
+  
+  a:hover:after {
+    right: 0;
+  }
+
+#logoHomeScreen{
+    height:90px;
+   border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+
+}
+
+
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background:"#222222"; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(15, 15, 15); 
+      }
+      
+      /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: rgb(146, 144, 144); 
+      }
+ 

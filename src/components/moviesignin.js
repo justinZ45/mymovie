@@ -1,78 +1,79 @@
-import React, {useState, Fragment} from "react";
-import {Link} from 'react-router-dom';
-import './moviesignin.css';
+import React, { useState, Fragment } from "react";
+import { Link } from 'react-router-dom';
+// import './moviesignin.css';
+import './movielogin.css';
 
 const MovieSignin = () => {
 
 
-    const [username, setUsername] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
 
-const MovieSignup = async e => {
+  const MovieSignup = async e => {
 
-try {
-    e.preventDefault(); 
-    
-    const body = {username, email, password};
-    const response = await fetch("https://mymovie123.herokuapp.com/users", { 
-        method:"POST",
-        headers: { "Content-Type": "application/json"},
+    try {
+      e.preventDefault();
+
+      const body = { username, email, password };
+      const response = await fetch("https://mymovie123.herokuapp.com/users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
-    });
-      
-      if(response.status == 500)
-      {
+      });
+
+      if (response.status == 500) {
         alert("Server Error.");
       }
-      else{
+      else {
         window.location = "/";
       }
- 
-} catch (err) {
-    console.error(err.response.data);
-}
-}
- 
 
-return (
-   <Fragment>
-       <style> {document.body.style.backgroundColor = "#222222"} </style>
-       <img src="https://www.fool.ca/wp-content/uploads/2020/11/movie-theatre.jpg" id="bg-2" alt=""></img>
-       <div className="background-login">
-    <div className="overall-info-2 " >
-    <div className="login-info" >
-  
-      
-    <form onSubmit={MovieSignup} className="cont-signup">
-    <img className = "form-control" id ="logo-signup" src = "https://github.com/J-Laur/capstone-backend/blob/main/logo.png?raw=true" />
-    <h1 className="text-primary"> Register Here</h1>
-    <h5 className="font-weight-bold text-light">Enter a Username</h5>
-        <input  placeholder="Username" type = "text" className="form-control border border-dark border-5" value={username} onChange={e => setUsername(e.target.value)}/>
-<br/>
-    <h5 className="font-weight-bold text-light">Enter an Email</h5>
-        <input placeholder="Email" type = "text" className="form-control border border-dark border-5" value={email} onChange={e => setEmail(e.target.value)}/>
-  <br/>
-    <h5 className="font-weight-bold text-light">Enter a Password</h5>
-        <input placeholder="Password" type = "password" className="form-control border border-dark border-5" value={password} onChange={e => setPassword(e.target.value)}/>
-        <br/>
-        <div className="form-control-lg">
-    <button type = "submit" className="signup-btn">Submit</button>
-  </div>
-  <br/>
-  <h6 className="text-light"> Return to Login:  
-<Link to="/">
- Click Here
-</Link>
-</h6>
-    </form>
-    </div>
-</div>
-</div>
-</Fragment>
+    } catch (err) {
+      console.error(err.response.data);
+    }
+  }
 
-)
+
+  return (
+    <Fragment>
+      <style> {document.body.style.backgroundColor = "#454545"} </style>
+
+      <div class="panels">
+        <div class="panel">
+          <img class="home-icon-image" src="https://media.discordapp.net/attachments/933832128708374638/966894860378460200/Screen_Shot_2022-04-21_at_10.54.49_PM.png?width=579&height=615" />
+        </div>
+        <div class="panel">
+
+
+
+
+          <form className="login-form" onSubmit={MovieSignup}>
+            <img src="https://github.com/cwang5336/myMovie_FrontEnd/blob/main/MyMovie-logos.png?raw=true" />
+            <h1>Register Here</h1>
+
+            <h2>Username</h2>
+            <input placeholder="Username" type="text" class="input-style" value={username} onChange={e => setUsername(e.target.value)} />
+            <h2>Email</h2>
+            <input placeholder="Email" type="text" class="input-style" value={email} onChange={e => setEmail(e.target.value)} />
+            <h2>Password</h2>
+            <input placeholder="Password" class="input-style" type="password" value={password} onChange={e => setPassword(e.target.value)} />
+
+            <button type="submit" class="login-btn"> Register </button>
+
+            <h3>Return to Login  <Link to="/" >
+              Click Here
+            </Link></h3>
+
+
+          </form>
+
+        </div>
+      </div>
+    </Fragment>
+
+  )
 
 }
 export default MovieSignin;

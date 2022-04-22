@@ -81,12 +81,12 @@ function Trailer() {
    <form className="search-cont" onSubmit={getTrailer} >
                 <input placeholder="Specific Movie Name"
                     type="text"
-                    className="form-control-lg border border-dark border-5"
+                    className="searchInput"
                     value={search}
                     onChange={e => setSearch(e.target.value)} />
 
 
-                <button className="btn btn-dark" id="search-btn" type="submit"> Search </button>
+                <button className="search-btn" type="submit"> 🔍 </button>
 
             </form> 
 

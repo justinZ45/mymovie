@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./home.css";
 import Nav from "./nav";
 
+
+
 function Home() {
+
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
 
@@ -93,6 +96,8 @@ function Home() {
     }
   }, []);
 
+  
+
   return (
     <div>
       
@@ -106,14 +111,17 @@ function Home() {
             <br />
 
    <form className="search-cont" onSubmit={getSearch} >
-                <input placeholder="Specific Movie Name"
+                <input 
+                className = "searchInput"
+                placeholder="Specific Movie Name"
                     type="text"
-                    className="form-control-lg border border-dark border-5"
+                   
                     value={search}
                     onChange={e => setSearch(e.target.value)} />
 
 
-                <button className="btn btn-dark" id="search-btn" type="submit"> Search </button>
+                <button  className="search-btn" type="submit"> 
+                🔍 </button>
 
             </form> 
    
@@ -154,7 +162,7 @@ function Home() {
   
 
       <div className="container">
-        <h1 className="text-light">Trending</h1>
+        <h1 id="catagoryTitle">Trending</h1>
         <div className="row">
           {isLoading ? (
             <h1 className="text-white">Fetching Movies...</h1>
@@ -180,7 +188,7 @@ function Home() {
   
 
       <div className="container">
-        <h1 className="text-light">Popular</h1>
+        <h1 id="catagoryTitle">Popular</h1>
         <div className="row">
           {isLoading ? (
             <h1 className="text-white">Fetching Movies...</h1>
@@ -206,7 +214,7 @@ function Home() {
 
 
       <div className="container">
-        <h1 className="text-light">Showing Now</h1>
+        <h1 id="catagoryTitle">Showing Now</h1>
         <div className="row">
           {isLoading ? (
             <h1 className="text-white">Fetching Movies...</h1>
@@ -232,7 +240,7 @@ function Home() {
 
   
       <div className="container">
-        <h1 className="text-light">Upcoming</h1>
+        <h1 id="catagoryTitle">Upcoming</h1>
         <div className="row">
           {isLoading ? (
             <h1 className="text-white">Fetching Movies...</h1>
@@ -246,7 +254,7 @@ function Home() {
                   <p className="card-text font-weight-bold text-center text-white">
                     {data3.original_title}
                   </p>
-                  <p className="card-text text-center text-white">{`Release date: ${data3.release_date}`}</p>
+                  <p className="card-text text-center text-white">{`${data3.release_date}`}</p>
                 </div>
             
             ))
