@@ -42,6 +42,6 @@ User Movie List
 
 ## Credits 
 This project would not be possible without these team members:
-- https://github.com/BrklynDanil
+- https://github.com/danace38
 - https://github.com/cwang5336
 - https://github.com/J-Laur
